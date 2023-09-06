@@ -1,0 +1,269 @@
+.slide_container {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  position: relative;
+  border: 10px solid #4eb7d4;
+  border-radius: 10px;
+  max-width: 1800px;
+}
+.slide img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+.back,
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 6vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.forward {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.dot_content {
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active1,
+.dot:hover {
+  background-color: #717171;
+}
+.slide_container a:hover {
+  color: #29a1d9;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.title {
+  width: 80%;
+  margin: 50px auto;
+  max-width: 1800px;
+}
+.title img {
+  width: 100%;
+  margin-top: 30px;
+}
+.title h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px#ff1212;
+  color: white;
+  font-size: 6vw;
+}
+.line1 {
+  display: flex;
+  border: 3px solid rgba(0, 68, 255, 0.3);
+  padding: 10px;
+  width: 85%;
+  margin: 50px auto;
+  max-width: 2000px;
+}
+.line1 p {
+  margin: auto 25px;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #262626;
+}
+.character {
+  width: 25%;
+  margin-top: 40px;
+}
+#fate {
+  color: white;
+  text-shadow: 0 0 20px blue;
+  font-size: 2.5vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.line2 {
+  display: flex;
+  border: 3px solid rgba(0, 68, 255, 0.3);
+  padding: 10px;
+  width: 85%;
+  margin: 50px auto;
+  max-width: 2000px;
+}
+.line2 p {
+  margin: auto 0px;
+  font-size: 1.3vw;
+  text-align: center;
+  color: #262626;
+}
+#ubw {
+  color: white;
+  text-shadow: 0 0 20px #d40000;
+  text-align: center;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+}
+.line3 {
+  display: flex;
+  border: 3px solid rgba(0, 68, 255, 0.3);
+  padding: 10px;
+  width: 85%;
+  margin: 50px auto;
+  max-width: 2000px;
+}
+.line3 p {
+  margin: auto 88px;
+  font-size: 1.4vw;
+  text-align: center;
+  color: #262626;
+}
+
+#hf {
+  color: white;
+  text-shadow: 0 0 20px #ff08bd;
+  text-align: center;
+  font-size: 2.5vw;
+  left: 50%;
+  text-transform: uppercase;
+}
+.pic {
+  display: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .slide_container {
+    margin-top: 110px;
+  }
+  .dot {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slide_container {
+    width: 90%;
+  }
+  .title h1 {
+    font-size: 9vw;
+  }
+  .title {
+    margin-top: 30px;
+  }
+  .line1 {
+    width: 100%;
+  }
+  .character {
+    width: 30%;
+  }
+  .line1 p {
+    font-size: 2vw;
+    margin: auto 30px;
+  }
+  #fate {
+    font-size: 4vw;
+  }
+  .line2 {
+    width: 100%;
+  }
+  .line2 p {
+    font-size: 1.8vw;
+    margin: auto 25px;
+    padding: 30px 0px;
+  }
+  .line3 {
+    width: 100%;
+  }
+  .line3 p {
+    font-size: 2vw;
+    margin: auto 25px;
+    padding: 30px 0px;
+  }
+  #ubw {
+    font-size: 4vw;
+  }
+  #hf {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .slide_container {
+    width: 100%;
+    border: 5px solid #4eb7d4;
+  }
+  .back,
+  .forward {
+    font-size: 9vw;
+  }
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+  #bye {
+    display: none;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .title h1 {
+    font-size: 12vw;
+  }
+  .line1 {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .line2 {
+    flex-direction: column;
+  }
+  .line3 {
+    flex-direction: column;
+  }
+  .character {
+    width: 40%;
+    margin-top: 0;
+    margin: auto;
+  }
+  .line1 p {
+    font-size: 3.5vw;
+  }
+  .line2 p {
+    font-size: 3.5vw;
+    padding: 0px 0px;
+  }
+  .line3 p {
+    font-size: 3.5vw;
+    padding: 0px 0px;
+  }
+  #fate {
+    font-size: 10vw;
+  }
+  #ubw {
+    font-size: 10vw;
+  }
+  #hf {
+    font-size: 8vw;
+  }
+  .pic {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+  }
+}

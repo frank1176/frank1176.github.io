@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.title {
+  margin-top: 100px;
+  text-align: center;
+}
+.title h1 {
+  font-size: 3vw;
+  margin-bottom: 40px;
+}
+.title p {
+  font-size: 1.5vw;
+  margin-bottom: 30px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  max-width: 1500px;
+}
+.form_container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  padding-bottom: 15%;
+  background: rgba(191, 191, 191, 0.8);
+  box-shadow: 0 0 10px;
+}
+
+.input_form {
+  width: 50%;
+  margin-right: 4%;
+}
+.input {
+  width: 100%;
+  font-size: 1.2vw;
+}
+.dateofbirth {
+  font-size: 1.2vw;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="radio"] {
+  width: 2vw;
+  height: 2vh;
+}
+.msg {
+  width: 50%;
+}
+textarea {
+  font-size: 1.4vw;
+  height: 100%;
+  resize: none;
+}
+.input_form .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #00a3f5;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+.btn {
+  background: #0084ff;
+  text-align: center;
+  padding: 15px;
+  font-size: 1vw;
+  border-radius: 10px;
+  color: #fff;
+  width: 30%;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+.dateofbirth select {
+  background: #6ecbfa;
+  color: #2b55fc;
+  border: 2px solid #3bff38;
+  border-radius: 5px;
+  height: 30px;
+  text-transform: uppercase;
+  width: 22%;
+  font-size: 1vw;
+}
+.problem {
+  color: red;
+  font-size: 1.2vw;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .title {
+    margin-top: 70px;
+  }
+  .title h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .title p {
+    font-size: 2vw;
+    margin-bottom: 30px;
+  }
+  .input {
+    font-size: 2.5vw;
+  }
+  .dateofbirth {
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+  .dateofbirth select {
+    font-size: 1.3vw;
+    width: 20%;
+  }
+  textarea {
+    font-size: 2.5vw;
+    height: 90%;
+  }
+  .btn {
+    font-size: 2vw;
+    width: 50%;
+  }
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+  .problem {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 95%;
+  }
+
+  .title p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .form_container {
+    display: block;
+  }
+  .input_form {
+    width: 100%;
+    margin-right: 4%;
+  }
+  .dateofbirth select {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 4vw;
+  }
+  .input {
+    font-size: 4vw;
+  }
+  .dateofbirth {
+    font-size: 4vw;
+  }
+  textarea {
+    font-size: 4vw;
+    height: 20vh;
+  }
+  .msg {
+    width: 100%;
+  }
+  .btn {
+    font-size: 15px;
+    width: 100%;
+  }
+  .button {
+    margin: auto;
+    width: 90%;
+  }
+  .input_form .input {
+    padding-left: 0px;
+    padding-bottom: 17px;
+  }
+  .problem {
+    font-size: 4vw;
+  }
+}

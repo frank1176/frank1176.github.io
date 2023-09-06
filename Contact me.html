@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/Contact me.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/header.js"></script>
+
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/logo.png" alt="" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Singer.html">Singer</a></li>
+          <li class="sub_menu">
+            <a href="Fate_series.html">Fate series</a>
+            <ul>
+              <li>
+                <a href="Fate stay night.html">Fate stay nights</a>
+              </li>
+              <li>
+                <a href="Fate grand order.html">Fate Grand Order</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sub_menu">
+            <a href="Game.html">Game</a>
+            <ul>
+              <li><a href="Overwatch.html">Overwatch</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Contact me.html" class="active">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+    <div class="title">
+      <h1>Contact me</h1>
+      <p>
+        You can contact me through submit the form also you can give me any
+        suggestion for this website
+      </p>
+    </div>
+    <form action="#" class="container">
+      <div class="form_container">
+        <div class="input_form">
+          <input type="text" class="input" placeholder="Name:" id="name" />
+          <p id="error1"></p>
+          <input type="text" class="input" placeholder="Phone:" id="phone" />
+          <p id="error2"></p>
+          <input type="text" class="input" placeholder="Email:" id="email" />
+          <p id="error3"></p>
+
+          <div class="dateofbirth">
+            <label for="birth">Date of Birth: </label>
+            <select name="birth" id="day">
+              <option value="0">day</option>
+            </select>
+            <select name="birth" id="month">
+              <option value="0">month</option>
+            </select>
+            <select name="brith" id="year">
+              <option value="0">year</option>
+            </select>
+            <p id="error4"></p>
+            <br />
+
+            <label for="Gender">Gender: </label>
+            <input type="radio" name="radio1" id="Male" value="1" />
+            <label for="Male">Male</label>
+            <input type="radio" name="radio1" id="Female" value="2" />
+            <label for="Female">Female</label>
+            <p id="error5"></p>
+          </div>
+        </div>
+        <div class="msg">
+          <textarea placeholder="Message" id="message1"></textarea>
+          <p id="error6"></p>
+          <div class="button">
+            <input type="submit" class="btn" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="js/contact.js"></script>
+</html>

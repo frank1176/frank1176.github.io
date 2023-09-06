@@ -1,0 +1,177 @@
+.autoslide {
+  animation: slide 16s ease-in-out infinite;
+  left: 0;
+  top: 0;
+  padding-top: 50%;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.title {
+  margin-top: 70px;
+}
+.title h1 {
+  text-align: center;
+  font-size: 6vw;
+  color: white;
+  text-shadow: 0 0 20px #29a1d9;
+  text-transform: uppercase;
+}
+.section1_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+  margin: auto;
+}
+.section1_content img {
+  width: 45%;
+}
+.section1_content p {
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 5vh;
+  color: #262626;
+  margin-left: 55px;
+}
+.section1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.movie h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 20px #5d6061;
+  text-transform: uppercase;
+  font-size: 6vw;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 2000px;
+  margin: auto;
+}
+.movie iframe {
+  width: 50%;
+  height: 60vh;
+  padding: 5px;
+  margin: auto;
+  margin-top: 30px;
+  border: 5px double #40a9ff;
+}
+.section2_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+  margin: auto;
+}
+.section2_content p {
+  color: #262626;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-left: 70px;
+}
+.section2_content img {
+  width: 45%;
+}
+.section2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+@media only screen and (min-width: 1440px) {
+  .section2_content img {
+    width: 200%;
+  }
+  .section1_content img {
+    width: 200%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 9vw;
+  }
+  .title {
+    margin-top: 40px;
+  }
+  .section1 {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .section1_content p {
+    margin-left: 0;
+    font-size: 2.5vw;
+    line-height: 3.5vh;
+  }
+  .movie h1 {
+    font-size: 9vw;
+  }
+  .movie iframe {
+    width: 80%;
+    height: 50vh;
+  }
+  .section2_content {
+    flex-direction: column;
+  }
+  .section2_content img {
+    width: 60%;
+  }
+  .section2_content p {
+    margin-top: 20px;
+    font-size: 2.5vw;
+    margin-left: 0;
+    padding: 0px 100px;
+    line-height: 4vh;
+  }
+  .section2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .title h1 {
+    font-size: 12vw;
+  }
+  .section1 {
+    width: 80%;
+  }
+  .section1_content {
+    flex-direction: column;
+  }
+  .section1_content p {
+    font-size: 3.5vw;
+    margin-top: 30px;
+    line-height: 4vh;
+    padding: 0px 15px;
+  }
+  .section1_content img {
+    width: 80%;
+  }
+  .movie h1 {
+    font-size: 12vw;
+  }
+  .movie iframe {
+    width: 100%;
+    height: 40vh;
+  }
+  .section2_content p {
+    font-size: 3.5vw;
+    padding: 0 25px;
+  }
+}
+@keyframes slide {
+  0%,
+  100% {
+    background-image: url(../images/FateGrandOrder/FGO.jpg);
+  }
+  50% {
+    background-image: url(../images/FateGrandOrder/FGO2.jpg);
+  }
+  75% {
+    background-image: url(../images/FateGrandOrder/FGO3.jpg);
+  }
+}
